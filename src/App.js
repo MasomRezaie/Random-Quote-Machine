@@ -1,16 +1,19 @@
-import HomeBody from "./Component/HomeBody";
-import Nav from "./Component/Nav";
-function App() {
-  return (
-    <>
+import { useState, useEffect } from 'react';
+import { FaTwitter, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import './App.css';
 
-    <Nav/>
-    <div className="App">
-     <h1>Hello</h1>
+const getRandomColor = () => {
+  const red = Math.floor(Math.random() * 128);
+  const green = Math.floor(Math.random() * 128);
+  const blue = Math.floor(Math.random() * 128);
+  return `rgb(${red}, ${green}, ${blue})`;
+};
+
+  return (
+    <div>
+
     </div>
-    <HomeBody/>
-    </>
-  );
-}
+  )
+
 
 export default App;
