@@ -34,9 +34,47 @@ function App() {
 
 
   return (
-    <div>
-
+    <div
+    className="background"
+    style={{ backgroundColor: randomColor, transition }}
+  >
+    <div id="quote-box">
+      <div
+        className="quote-content"
+        style={{ color: randomColor, transition }}
+      >
+        <h2 id="text">
+          <FaQuoteLeft size="30" style={{ marginRight: '10px' }} />
+          {quote.quote}
+          <FaQuoteRight size="30" style={{ marginLeft: '10px' }} />
+        </h2>
+        <h4 id="author">{quote.author}</h4>
+      </div>
+      <div className="buttons">
+        <a
+          href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote.quote}`}
+          id="tweet-quote"
+          style={{
+            backgroundColor: randomColor,
+            marginRight: '10px',
+            transition,
+          }}
+          aria-label="Tweet this quote"
+        >
+          <FaTwitter color="white" />
+        </a>
+        <button
+          id="new-quote"
+          onClick={changeQuote}
+          style={{ backgroundColor: randomColor, transition }}
+          type="button"
+          aria-label="Change quote"
+        >
+          Change Quote
+        </button>
+      </div>
     </div>
+  </div>
   )
 
 
