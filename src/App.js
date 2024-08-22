@@ -27,6 +27,11 @@ function App() {
 
     fetchQuotes();
   }, []);
+  const changeQuote = () => {
+    setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+    setRandomColor(getRandomColor());
+  };
+
 
   return (
     <div>
