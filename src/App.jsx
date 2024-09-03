@@ -61,7 +61,7 @@ function App() {
           }}
           aria-label="Tweet this quote"
         >
-          <FaTwitter color="white" />
+          <FaTwitter color="black" />
         </a>
         <button
           id="new-quote"
