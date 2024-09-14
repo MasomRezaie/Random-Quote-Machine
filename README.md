@@ -38,12 +38,15 @@ git push: it push the changes into github.
 
 To use this project, follow these instructions:
 1. First,  create a repositort 
+
 clone the repository and navigate to the project directory:
 open git bush and use git clone: 
 git clone https://github.com/yourusername/project-name.git
    cd project-name.
+
 2. Installation: Install the required dependencies using git:
 git install
+
 3. Configuration: Configure [Project Name] by editing the config.git file.
 
 
